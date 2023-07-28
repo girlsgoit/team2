@@ -1,18 +1,32 @@
-<script>
-// import Dish from "./components/Dish.vue"
+<script setup>
+import { ref, onMounted } from 'vue';
+import { db } from '@/firebase';
+import { collection, onSnapshot } from 'firebase/firestore';
 
-export default{
-    name:"Menu",
-    data: function() {
-      return {
-        
-      }
-    }
-}
+const menus = ref([]);
+
+// Function to fetch data from Cloud Firestore
+const fetchData = () => {
+  onSnapshot(collection(db, 'goji-menu'), (querySnapshot) => {
+    const menuData = [];
+    querySnapshot.forEach((doc) => {
+      const menuItem = {
+        Title: doc.data().Title,
+        Image: doc.data().Image,
+        Price: doc.data().Price,
+      };
+      menuData.push(menuItem);
+    });
+    menus.value = menuData;
+  });
+};
+onMounted(() => {
+  fetchData();
+});
+
 </script>
 
 <template>
-<title>MOJO HOME</title>
 <link rel="stylesheet" href="menu.css">
 <link rel="icon" href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png">
 <header id="container1">
@@ -36,6 +50,15 @@ export default{
 <div id="div1">
 <h1>About us</h1>
 </div>
+
+    <!-- Loop through the menus array to render menu items -->
+    <div v-for="menuItem in menus">
+      <p>{{ menuItem.Title }}</p>
+      <!-- Render other properties of the menuItem object, e.g., Image, Price, etc. -->
+      <img :src="menuItem.Image" style="width: 100px;">
+      <p>{{ menuItem.Price }}</p>
+    </div>
+
 
 <div id="div2">
     MOJO restobar is a 24/7 Casual Dining restaurant with a harmonious combination of European and Japanese cuisine and a cocktail bar.
