@@ -1,9 +1,9 @@
 <script setup>
-import Menu from './components/Menu.vue'
+import MainPage from './components/MainPage.vue'
 </script>
 
 <template>
-<Menu/>
+<MainPage/>
 </template>
 
 <style scoped>
