@@ -1,4 +1,6 @@
 <script>
+import Dish from "./components/Dish.vue"
+
 export default{
     name:"Menu",
     data: function() {
