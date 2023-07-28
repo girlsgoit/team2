@@ -1,25 +1,4 @@
-<<<<<<< HEAD:frontDinamic/grupul2/src/components/Menu.vue
-<script>
-export default {
-  name: "Menu",
-  data: function () {
-    return {};
-  },
-};
-</script>
 
-<template>
-  <title>MOJO HOME</title>
-  <link rel="stylesheet" href="menu.css" />
-  <link
-    rel="icon"
-    href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png"
-  />
-  <header id="container1">
-    <img
-      id="img1"
-      src="https://static.tildacdn.com/tild3865-3761-4537-b465-373432643132/logo_1.svg"
-    />
 =======
 <script setup>
 import { ref, onMounted } from 'vue';
@@ -49,7 +28,21 @@ onMounted(() => {
 
 </script>
 
+
 <template>
+  <template>
+  <title>MOJO HOME</title>
+  <link rel="stylesheet" href="menu.css" />
+  <link
+    rel="icon"
+    href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png"
+  />
+  <header id="container1">
+    <img
+      id="img1"
+      src="https://static.tildacdn.com/tild3865-3761-4537-b465-373432643132/logo_1.svg"
+    />
+
 <link rel="stylesheet" href="menu.css">
 <link rel="icon" href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png">
 <header id="container1">
@@ -66,7 +59,7 @@ onMounted(() => {
 <img class="img2" style="animation-delay: 0.5s;" src="https://thumb.tildacdn.com/tild6234-3233-4565-b830-353662316634/-/resize/432x/-/format/webp/IMG_3305.JPG">
 <img class="img2" style="animation-delay: 0.8s;" src="https://static.tildacdn.com/tild3938-6264-4661-b537-366464323366/Rectangle_3.svg">
 <img class="img2" style="animation-delay: 1.2s;" src="https://thumb.tildacdn.com/tild3435-6462-4364-a237-326161386565/-/resize/503x/-/format/webp/feel_the_mojo.png">
->>>>>>> a4941d38cbde4a3f07069195409e194a4417e221:frontDinamic/grupul2/src/components/MainPage.vue
+</section>
 
     <button
       onclick="window.open('https://htmlcolorcodes.com/')"
@@ -146,7 +139,6 @@ onMounted(() => {
     />
   </section>
 
-<<<<<<< HEAD:frontDinamic/grupul2/src/components/Menu.vue
   <section id="containerimagine">
     <img
       id="img4"
@@ -189,7 +181,7 @@ onMounted(() => {
 >>>>>>> a4941d38cbde4a3f07069195409e194a4417e221:frontDinamic/grupul2/src/components/MainPage.vue
 
     <div id="div3"><h1>MENU</h1></div>
-  </section>
+
 </template>
 
 <style>
