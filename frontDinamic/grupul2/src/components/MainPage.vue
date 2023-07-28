@@ -1,5 +1,9 @@
 <script>
+<<<<<<< HEAD
 //
+=======
+// import Dish from "./components/Dish.vue"
+>>>>>>> 262ee88fc7e35d83cb16475a265572e1998cda9e
 
 export default{
     name:"Menu",
