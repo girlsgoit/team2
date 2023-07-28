@@ -29,7 +29,7 @@ onMounted(() => {
 </script>
 
 
-<template>
+
   <template>
   <title>MOJO HOME</title>
   <link rel="stylesheet" href="menu.css" />
