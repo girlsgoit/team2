@@ -201,8 +201,4 @@ padding:6%;}
      opacity: 100%;
      margin-top: -100%;
    }
- }
- 
-
- 
-</style>
+ } </style>
