@@ -63,21 +63,21 @@ body {
 }
 @keyframes poza {
   0% {
-    margin-top: 5%;
+    margin-top: -4%;
     opacity: 0%;
   }
   100% {
-    margin-top: 10%;
+    margin-top: 2%;
     opacity: 100%;
   }}
 
 @keyframes text {
     0% {
-      margin-top: 0%;
+      margin-top: -7%;
       opacity: 0%;
     }
     100% {
-      margin-top: 5%;
+      margin-top: -1%;
       opacity: 100%;
     }
 }
@@ -98,7 +98,8 @@ body {
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-duration: 0.8s;
-  font-style: italic;
+font-family: 'Prompt', sans-serif;
+
 }
 #div2 {
   color: rgb(230, 230, 230);
