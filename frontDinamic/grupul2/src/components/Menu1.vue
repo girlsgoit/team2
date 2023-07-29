@@ -184,7 +184,8 @@
                 
     <h1>SOUPS</h1>
 
-</section>
+
+
 <div class="container">
 <div class="card">
     <div class="card-image">
@@ -194,7 +195,7 @@
         <h2 class="card-title">RED BORSHT WITH VEAL</h2>
     </div>
     <div class="card-price">75MDL</div>
-</div></div>
+</div>
 <div class="card">
     <div class="card-image">
         <img src="https://thumb.tildacdn.com/stor6339-6139-4134-b332-356165366639/-/format/webp/63410389.jpg">
@@ -214,13 +215,15 @@
     <div class="card-price">125MDL</div>
 </div>
 
+</div>
 
+</section>
+                
 
-<section class="breakfast-section">
                 
     <h1>PASTA</h1>
 
-</section>
+
 <div class="container">
 <div class="card">
     <div class="card-image">
@@ -310,55 +313,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
-<body>   
-    <div class="container">
-        <div class="card">
-            <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
-            </div>
-            <div class="card-text">
-                <h2 class="card-title">Délicieux Bénédicte</h2>
-            </div>
-            <div class="card-price">$56</div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
-            </div>
-            <div class="card-text">
-                <h2 class="card-title">Délicieux Bénédicte</h2>
-            </div>
-            <div class="card-price">$56</div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
-            </div>
-            <div class="card-text">
-                <h2 class="card-title">Délicieux Bénédicte</h2>
-            </div>
-            <div class="card-price">$56</div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
-            </div>
-            <div class="card-text">
-                <h2 class="card-title">Délicieux Bénédicte</h2>
-            </div>
-            <div class="card-price">$56</div>
-        </div>
-        <div class="card">
-            <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1604135307399-86c6ce0aba8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80">
-            </div>
-            <div class="card-text">
-                <h2 class="card-title">Délicieux Bénédicte</h2>
-            </div>
-            <div class="card-price">$56</div>
-        </div>
-    </div>
-</body>
+
 </template>
 
 <style>
