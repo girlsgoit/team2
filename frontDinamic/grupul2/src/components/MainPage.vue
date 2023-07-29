@@ -54,8 +54,8 @@ components:{
           <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%"><u><h1>Home</h1></u></button></RouterLink>
           <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;"><h1>Menu</h1></button></RouterLink>
           <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;"><h1>About</h1></button></RouterLink>
-          <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%;" ><h1>Reviews</h1></button></RouterLink>
-          <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%;"><h1>Book a table</h1></button></RouterLink>
+          <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 74%;" ><h1>Reviews</h1></button></RouterLink>
+          <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 40%;"><h1>Book a table</h1></button></RouterLink>
       </header>
       <section id="container2">
         <img
@@ -132,6 +132,7 @@ body {
   font-size: 65%;
   color: rgb(230, 230, 230);
   cursor: pointer;
+  margin-top:100%;
 }
 #container1 {
 
@@ -149,6 +150,7 @@ body {
   padding-left: 3%;
   padding-right: 3%;
   cursor: pointer;
+  margin-top:100%;
 }
 #button2,
 .button1 {
@@ -179,7 +181,7 @@ body {
   margin-left: -50%;
   margin-top: 7%;
   animation-fill-mode: forwards;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
 }
 @keyframes poza {
   0% {
@@ -187,7 +189,7 @@ body {
     opacity: 0%;
   }
   100% {
-    margin-top: 8%;
+    margin-top: 20%;
     opacity: 100%;
   }}
 
@@ -197,7 +199,7 @@ body {
       opacity: 0%;
     }
     100% {
-      margin-top: -1%;
+      margin-top: 14%;
       opacity: 100%;
     }
 }
@@ -217,7 +219,7 @@ body {
   animation-name:text ;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
 font-family: 'Prompt', sans-serif;
 
 }
@@ -343,7 +345,7 @@ font-family: 'Prompt', sans-serif;
 #div4{ 
   font-size: 150%;
   margin-top:3%;
-  margin-left:-30%;
+  margin-left:0%;
   color:rgb(230, 230, 230);}
 .black{width:450px;
 height:3px;
