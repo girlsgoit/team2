@@ -50,11 +50,11 @@ components:{
 </div>
 <header id="container1" >
       
-      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 151%;"><u><h1>Home</h1></u></button></RouterLink>
-      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 158%;"><h1>Menu</h1></button></RouterLink>
-      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 155%;"><h1>About</h1></button></RouterLink>
-      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 128%;" ><h1>Reviews</h1></button></RouterLink>
-      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 104%;"><h1>Book a table</h1></button></RouterLink>
+      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 100%;"><u><h1>Home</h1></u></button></RouterLink>
+      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 105%;"><h1>Menu</h1></button></RouterLink>
+      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 105%;"><h1>About</h1></button></RouterLink>
+      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 88%;" ><h1>Reviews</h1></button></RouterLink>
+      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:200%; margin-top: 71.5%;"><h1>Book a table</h1></button></RouterLink>
   </header>
       <section id="container2">
         <img
