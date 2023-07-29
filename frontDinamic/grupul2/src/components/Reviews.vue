@@ -1,5 +1,53 @@
-<script >
+<script setup>
+import { ref, onMounted } from 'vue';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from '../firebase';
 
+// Define the review array as a ref
+const review = ref([]);
+
+// Function to fetch reviews from Firestore
+async function fetchReviews() {
+  try {
+    // Query a reference to the subcollection
+    const querySnapshot = await getDocs(collection(db, "goji-reviews"));
+
+    // Loop through the query snapshot to get each document
+    querySnapshot.forEach((doc) => {
+      // Push name and content to the review array
+      review.value.push({
+        name: doc.data().name,
+        content: doc.data().content
+      });
+    });
+
+    console.log("Review array:", review.value); // Log the populated review array
+  } catch (error) {
+    console.error("Error fetching reviews: ", error);
+  }
+}
+
+// Call the fetchReviews function when the component is mounted
+onMounted(fetchReviews);
+
+// Define the name and content variables with ref
+const name = ref('');
+const content = ref('');
+
+// Function to add a new review to Firestore
+const SubReview = async () => {
+  try {
+    const docRef = await addDoc(collection(db, "goji-reviews"), {
+      name: name.value,
+      content: content.value,
+    });
+    console.log("Document written with ID: ", docRef.id);
+    name.value = '';
+    content.value = '';
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+};
 </script>
 
 <template>
@@ -8,12 +56,19 @@
 <div class="container">
   <h1>Restaurant Reviews</h1>
   <div id="reviews-container"></div>
-  <form id="review-form">
-    <input type="text" id="name" placeholder="Your Name" required/>
-    <textarea id="review" placeholder="Write your review here" required></textarea>
+  <form id="review-form" @submit.prevent="SubReview">
+    <input v-model="name" placeholder="Your name" required />
+    <input v-model="content" placeholder="Your review" required />
     <button type="submit">Submit Review</button>
   </form>
 </div>
+<section>
+  <div v-for="rev in review" :key="rev.name">
+    <h2>{{ rev.name }}</h2>
+    <p>{{ rev.content }}</p>
+  </div>
+</section>
+<br/>
 
 </body>
 </template>
