@@ -4,19 +4,9 @@
 import { ref, onMounted } from 'vue';
 import { db } from '@/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { RouterLink } from "vue-router"
+import { RouterLink } from "vue-router";
 
-export default{
-  name:"MainPage",
-  data: function(){
-    return{
 
-    }
-  },
-  components: {
-    RouterLink
-  }
-}
 
 const menus = ref([]);
 
@@ -37,8 +27,11 @@ const fetchData = () => {
 };
 onMounted(() => {
   fetchData();
-});
-
+},
+);
+components:{
+   RouterLink
+   }
 
 </script>
 

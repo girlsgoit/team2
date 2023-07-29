@@ -29,7 +29,7 @@
     <p>Time: <span id="confirmedTime"></span></p>
     <p>Number of Guests: <span id="confirmedGuests"></span></p>
   </div>
-
+</body>
 
 </template>
 
