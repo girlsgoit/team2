@@ -1,19 +1,5 @@
 <template>
   <title>Restaurant Reservation</title>
-  <link rel="stylesheet" href="styles.css">
-  <h1>Restaurant Reservation</h1>
-
-    <!-- Add more tables here with their schedules -->
-    <!-- Example: 
-    <div class="table">
-      <h3>Table 2</h3>
-      <ul class="schedule">
-        <li>...</li>
-        <li>...</li>
-      </ul>
-    </div>
-    -->
-
   <div class="reservation-form">
     <h2>Make a Reservation</h2>
     <form>
@@ -30,11 +16,8 @@
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="name">Table:</label>
-      <input type="text" id="table" name="table" required>
-
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required><br>
       
       <button type="submit">Submit Reservation</button>
     </form>
