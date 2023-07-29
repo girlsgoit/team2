@@ -47,7 +47,7 @@ components:{
 <header id="container1">
   <img
     id="img1"
-    src="https://static.tildacdn.com/tild3865-3761-4537-b465-373432643132/logo_1.svg" />
+    src="https://i.pinimg.com/750x/48/93/bc/4893bc873375d837f53a2add32ab1dfc.jpg" />
 
     <RouterLink :to = "{name:'home'}"><button class="button1"><u><h1>Home</h1></u></button></RouterLink>
     <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 3%;"><h1>Menu</h1></button></RouterLink>
