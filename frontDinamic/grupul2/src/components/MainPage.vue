@@ -92,7 +92,7 @@ components:{
       </section>
       <div id="containermeniu">
         <div style="border-radius:50% 0 0 0 ; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkrn4KDuR8sc7XuJa0ff9DLJ4ewPiNF4sTA&usqp=CAU);" class="meniu"><button class="buton" onclick="window.open('')"><h1>European menu</h1></button></div>
-        <div style="border-radius:0 0 0 0 ; background-image: url(download.jpg);" class="meniu"><button class="buton" onclick="window.open('')"><h1>drinks</h1></button></div>
+        <div style="border-radius:0 0 0 0 ; background-image: url(download.jpg);" class="meniu"><button class="buton" onclick="window.open('')"><h1>Drinks</h1></button></div>
         <div style="border-radius:0 50% 0 0 ; background-image: url(https://thumb.tildacdn.com/stor3638-6535-4062-a236-333339343234/-/format/webp/46915269.jpg);" class="meniu"><button class="buton" onclick="window.open('')"><h1>Deserts</h1></button></div>
 </div>
       
@@ -241,7 +241,14 @@ font-family: 'Prompt', sans-serif;
   height: 50%;
   padding: 6%;
 }
+#container1 {
 
+display: flex;
+justify-content: center;
+margin: 1%;
+margin-top:0%;
+margin-left:-20%;
+}
 #img4 {
   position: absolute;
   width: 100%;
@@ -265,6 +272,7 @@ font-family: 'Prompt', sans-serif;
   font-size: 250%;
   margin-top: -100%;
   opacity: 0%;
+  color:black;
   animation-delay: 2s;
   margin-left:2%;
   animation-name: menu;
@@ -285,7 +293,7 @@ font-family: 'Prompt', sans-serif;
 #containermeniu{ position:absolute;
   display:flex;
   justify-content: center;
-  margin-left:28%;
+  margin-left:32%;
   margin-top: -65%;
 }
 
@@ -326,6 +334,7 @@ font-family: 'Prompt', sans-serif;
 
 #text1{font-size:250%;
       position:absolute;
+      color:black;
       margin-top:-50%;
       margin-left:14%;
 
@@ -335,6 +344,7 @@ font-family: 'Prompt', sans-serif;
   position:absolute;
   margin-top:-35%;
   margin-left:45%;
+  color:black;
 
 }
 
