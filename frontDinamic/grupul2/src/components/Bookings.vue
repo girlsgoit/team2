@@ -1,7 +1,7 @@
 <template>
 
 <body>
-  <h1>Restaurant Table Booking</h1>
+   <h1>Restaurant Table Booking</h1>
   <form id="bookingForm">
     <label for="name">Name:</label>
     <input type="text" id="name" required>
@@ -35,8 +35,8 @@
 
 <script>
 
-    document.getElementById('bookingForm').addEventListener('submit', function(event) {
-      event.preventDefault();
+    document.getElementById('bookingForm') {
+    
 
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
@@ -44,21 +44,9 @@
       const time = document.getElementById('time').value;
       const guests = document.getElementById('guests').value;
 
-      // You can add further validation here if needed
 
-      showConfirmation(name, email, date, time, guests);
-    });
+    };
 
-    function showConfirmation(name, email, date, time, guests) {
-      document.getElementById('bookingForm').style.display = 'none';
-      document.getElementById('confirmation').style.display = 'block';
-
-      document.getElementById('confirmedName').textContent = name;
-      document.getElementById('confirmedEmail').textContent = email;
-      document.getElementById('confirmedDate').textContent = date;
-      document.getElementById('confirmedTime').textContent = time;
-      document.getElementById('confirmedGuests').textContent = guests;
-    }
 
 
 </script>
