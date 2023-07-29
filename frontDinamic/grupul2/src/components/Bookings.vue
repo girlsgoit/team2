@@ -3,18 +3,6 @@
   <link rel="stylesheet" href="styles.css">
   <h1>Restaurant Reservation</h1>
 
-  <div class="timetable">
-    <div class="table">
-      <h3>Table 1</h3>
-      <ul class="schedule">
-        <li>09:00 AM - 11:00 AM: Available</li>
-        <li>11:30 AM - 01:30 PM: Available</li>
-        <li>02:00 PM - 04:00 PM: Reserved</li>
-        <li>04:30 PM - 06:30 PM: Reserved</li>
-        <li>07:00 PM - 09:00 PM: Available</li>
-      </ul>
-    </div>
-
     <!-- Add more tables here with their schedules -->
     <!-- Example: 
     <div class="table">
@@ -25,8 +13,6 @@
       </ul>
     </div>
     -->
-
-  </div>
 
   <div class="reservation-form">
     <h2>Make a Reservation</h2>
@@ -43,6 +29,9 @@
       
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
+
+      <label for="name">Table:</label>
+      <input type="text" id="table" name="table" required>
 
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
