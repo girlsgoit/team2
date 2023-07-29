@@ -1,42 +1,72 @@
-<script>
-import { db } from '@/firebase';
-import { collection, onSnapshot } from 'firebase/firestore';
-import { ref } from 'firebase/storage';
-
-const reviews = ref([]);
-
-const fetchData = () => {
-  onSnapshot(collection(db, ''), (querySnapshot) => {
-    const allReviews = [];
-    querySnapshot.forEach((doc) => {
-      const review = {
-        Title: doc.data().Title,
-        Rating: doc.data().Rating,
-        Text: doc.data().Text,
-        Username: doc.data().Username,
-      };
-      allReviews.push(review);
-    });
-    reviews.value = allReviews;
-  });
-};
-export default{
-  onMounted(){
-  fetchData();
-}};
+<script >
 
 </script>
 
 <template>
-     <!-- Loop through the menus array to render menu items -->
-     <div v-for="review in reviews">
-      <p>{{ review.Title }}</p>
-      <!-- Render other properties of the menuItem object, e.g., Image, Price, etc. -->
-      <p>{{ review.Rating }}</p>
-      <p>{{ review.Text }}</p>
-      <p>{{ review.Username }}</p>
-    </div>
+<body>
+
+<div class="container">
+  <h1>Restaurant Reviews</h1>
+  <div id="reviews-container"></div>
+  <form id="review-form">
+    <input type="text" id="name" placeholder="Your Name" required/>
+    <textarea id="review" placeholder="Write your review here" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+</div>
+
+</body>
 </template>
 
 <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+#reviews-container {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  margin: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+}
 </style>
