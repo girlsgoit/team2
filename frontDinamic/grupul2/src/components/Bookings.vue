@@ -1,42 +1,112 @@
 <template>
-  <form id="bookingForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" required>
+  <title>Restaurant Reservation</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1>Restaurant Reservation</h1>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
+  <div class="timetable">
+    <div class="table">
+      <h3>Table 1</h3>
+      <ul class="schedule">
+        <li>09:00 AM - 11:00 AM: Available</li>
+        <li>11:30 AM - 01:30 PM: Available</li>
+        <li>02:00 PM - 04:00 PM: Reserved</li>
+        <li>04:30 PM - 06:30 PM: Reserved</li>
+        <li>07:00 PM - 09:00 PM: Available</li>
+      </ul>
+    </div>
 
-    <label for="date">Date:</label>
-    <input type="date" id="date" required>
+    <!-- Add more tables here with their schedules -->
+    <!-- Example: 
+    <div class="table">
+      <h3>Table 2</h3>
+      <ul class="schedule">
+        <li>...</li>
+        <li>...</li>
+      </ul>
+    </div>
+    -->
 
-    <label for="time">Time:</label>
-    <input type="time" id="time" required>
+  </div>
 
-    <label for="guests">Number of Guests:</label>
-    <input type="number" id="guests" min="1" required>
+  <div class="reservation-form">
+    <h2>Make a Reservation</h2>
+    <form>
+      <label for="table">Select a Table:</label>
+      <select id="table" name="table">
+        <option value="table1">Table 1</option>
+        <!-- Add options for other tables here -->
+        <!-- Example: <option value="table2">Table 2</option> -->
+      </select>
+      
+      <label for="time">Select a Time:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
 
-    <button type="submit">Book Table</button>
-  </form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </div>
+
 </template>
 
 <script>
 
-   // document.getElementById('bookingForm') ;{
-    
-
-      //const name = document.getElementById('name').value;
-      //const email = document.getElementById('email').value;
-      //const date = document.getElementById('date').value;
-     // const time = document.getElementById('time').value;
-     // const guests = document.getElementById('guests').value;
-
-
-  //  };
-
-
-
 </script>
 
 <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.timetable {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: fixed;
+  
+}
+
+.table {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-form {
+  margin-top: 50px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label, input, select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
 
 </style>
