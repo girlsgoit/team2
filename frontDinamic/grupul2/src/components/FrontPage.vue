@@ -42,7 +42,7 @@ onMounted(() => {
 
             DISPLAY EVERY ITEM FROM DATABASE
             Loop through the menus array to render menu items
-            <!-- <div v-for="menuItem in menus">
+           <!-- <div v-for="menuItem in menus">
             <p>{{ menuItem.Title }}</p> -->
             <!-- Render other properties of the menuItem object, e.g., Image, Price, etc. -->
             <!-- <img :src="menuItem.Image" style="width: 100px;">
