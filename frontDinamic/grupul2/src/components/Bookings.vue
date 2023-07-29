@@ -4,20 +4,22 @@
     <h2>Make a Reservation</h2>
     <form>
       <label for="table">Select a Table:</label>
-      <select id="table" name="table">
+      <select v-model="table" id="table" name="table">
         <option value="table1">Table 1</option>
+        <option value="table2">Table 2</option>
+        <option value="table3">Table 3</option>
         <!-- Add options for other tables here -->
         <!-- Example: <option value="table2">Table 2</option> -->
       </select>
       
       <label for="time">Select a Time:</label>
-      <input type="time" id="time" name="time" required>
+      <input v-model="time" type="time" id="time" name="time" required>
       
       <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input v-model="name" type="text" id="name" name="name" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
+      <input v-model="email" type="email" id="email" name="email" required><br>
       
       <button style="color:black" type="submit">Submit Reservation</button>
     </form>
@@ -29,7 +31,36 @@
 
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from '../firebase';
+
+// Define the name and content variables with ref
+const time = ref('');
+const email = ref('');
+const name = ref('');
+const table = ref('');
+
+// Function to add a new review to Firestore
+const SubReview = async () => {
+  try {
+    const docRef = await addDoc(collection(db, "goji-reservation"), {
+      time: time.value,
+      email: email.value,
+      name: name.value,
+      table: table.value
+    });
+    console.log("Document written with ID: ", docRef.id);
+    time.value = '',
+    email.value = '',
+    name.value = '',
+    table.value = ''
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+  
+};
 
 </script>
 
