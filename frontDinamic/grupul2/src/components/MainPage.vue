@@ -100,16 +100,13 @@ components:{
   <img id="reclama" src="https://thumb.tildacdn.com/tild6261-3635-4933-b635-613439326132/-/format/webp/desk-gallery.png" >
 
 
-<footer>
+  <footer>
 <div align="center"> 
  <a href="https://www.facebook.com/gojistudioshk/"> <img class="sponsor" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png" ></a>
  <a href="https://www.instagram.com/lifesgoji/"> <img class="sponsor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"></a>
   <a href="https://twitter.com/Goji_investor"><img class="sponsor" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" ></a>
 </div>
 <div id="div4" align="center">&copy; All rights reserved - Goji Restobar 2023</div>
-
-
-
 </footer>
 </template>
 
