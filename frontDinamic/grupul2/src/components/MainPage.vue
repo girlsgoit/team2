@@ -72,12 +72,7 @@ components:{
 
   <div id="div1">
     <h1>About us</h1>
-    Goji restobar is a 24/7 Casual Dining restaurant with a harmonious
-    combination of European and Japanese cuisine and a cocktail bar.
-    <br />
-    Goji is a place where mood is created. Guests literally plunge into
-    another dimension filled with all the joys, blessings and festive mood,
-    regardless of the purpose and time of the visit.
+    At Goji, we believe that dining should be an extraordinary experience that tantalizes all your senses. Nestled in the heart of the city, our establishment is more than just a restaurant; it's a delightful fusion of delectable cuisine, warm ambiance, and exceptional service.
   </div>
 </section>
 <section id="containerimagine">
