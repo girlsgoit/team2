@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-image: url(https://static.tildacdn.com/tild3332-3133-4234-a665-383363313231/-/resize/504x/desktop-main_backgro.jpg);
+    background-size: 300%;
+  }
+  #container1{display: flex;
+    justify-content: center;
+              
+}
+  #div1{color: rgb(230, 230, 230);
+    font-family: 'Prompt', sans-serif;
+width:100%;}
+  label{color: rgb(230, 230, 230);
+    font-family: 'Prompt', sans-serif;
+font-size: 150%;}
+#button1{
+    font-size:150%;
+}
+#confirmation{color:rgb(230, 230, 230);
+font-size: 150%;
+font-family: 'Prompt', sans-serif;}
+
+
+.sponsor{
+    width:30px;
+    margin-top: 13%;
+  }
+  #div4{ font-size: 150%;
+    margin-top:1%;
+    color:rgb(230, 230, 230);}
