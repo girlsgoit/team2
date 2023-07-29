@@ -1,7 +1,4 @@
 <template>
-
-<body>
-   <h1>Restaurant Table Booking</h1>
   <form id="bookingForm">
     <label for="name">Name:</label>
     <input type="text" id="name" required>
@@ -20,32 +17,21 @@
 
     <button type="submit">Book Table</button>
   </form>
-
-  <div id="confirmation" style="display: none;">
-    <h2>Booking Confirmation</h2>
-    <p>Name: <span id="confirmedName"></span></p>
-    <p>Email: <span id="confirmedEmail"></span></p>
-    <p>Date: <span id="confirmedDate"></span></p>
-    <p>Time: <span id="confirmedTime"></span></p>
-    <p>Number of Guests: <span id="confirmedGuests"></span></p>
-  </div>
-</body>
-
 </template>
 
 <script>
 
-    document.getElementById('bookingForm') {
+   // document.getElementById('bookingForm') ;{
     
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const date = document.getElementById('date').value;
-      const time = document.getElementById('time').value;
-      const guests = document.getElementById('guests').value;
+      //const name = document.getElementById('name').value;
+      //const email = document.getElementById('email').value;
+      //const date = document.getElementById('date').value;
+     // const time = document.getElementById('time').value;
+     // const guests = document.getElementById('guests').value;
 
 
-    };
+  //  };
 
 
 
