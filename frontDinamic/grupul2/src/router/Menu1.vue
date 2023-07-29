@@ -309,9 +309,6 @@
     </div>
     </body>
   
-=======
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 
 
 </template>
