@@ -1,27 +1,12 @@
 <script setup>
-
-import { ref } from 'vue';
-import { collection, addDoc, getDocs} from "firebase/firestore";
+import { ref, onMounted } from 'vue';
+import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from '../firebase';
 
-const name = ref('');
-const content = ref('');
+// Define the review array as a ref
+const review = ref([]);
 
-const SubReview = async () => {
-  try {
-    const docRef = await addDoc(collection(db, "goji-reviews"), {
-      name: name.value,
-      content: content.value,
-    });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (error) {
-    console.error("Error adding document: ", error);
-  }
-};
-
-let review = [];
-
-// Retrieve data from a Firestore subcollection called "goji-reviews"
+// Function to fetch reviews from Firestore
 async function fetchReviews() {
   try {
     // Query a reference to the subcollection
@@ -29,23 +14,40 @@ async function fetchReviews() {
 
     // Loop through the query snapshot to get each document
     querySnapshot.forEach((doc) => {
-
       // Push name and content to the review array
-      review.push({
+      review.value.push({
         name: doc.data().name,
         content: doc.data().content
       });
     });
 
-    console.log("Review array:", review); // Log the populated review array
+    console.log("Review array:", review.value); // Log the populated review array
   } catch (error) {
     console.error("Error fetching reviews: ", error);
   }
 }
 
-// Call the function to fetch and log the reviews
-fetchReviews();
+// Call the fetchReviews function when the component is mounted
+onMounted(fetchReviews);
 
+// Define the name and content variables with ref
+const name = ref('');
+const content = ref('');
+
+// Function to add a new review to Firestore
+const SubReview = async () => {
+  try {
+    const docRef = await addDoc(collection(db, "goji-reviews"), {
+      name: name.value,
+      content: content.value,
+    });
+    console.log("Document written with ID: ", docRef.id);
+    name.value = '';
+    content.value = '';
+  } catch (error) {
+    console.error("Error adding document: ", error);
+  }
+};
 </script>
 
 <template>
@@ -55,13 +57,13 @@ fetchReviews();
   <h1>Restaurant Reviews</h1>
   <div id="reviews-container"></div>
   <form id="review-form" @submit.prevent="SubReview">
-    <input v-model="name" placeholder="Your name" />
-    <input v-model="content" placeholder="Your review" />
+    <input v-model="name" placeholder="Your name" required />
+    <input v-model="content" placeholder="Your review" required />
     <button type="submit">Submit Review</button>
   </form>
 </div>
 <section>
-  <div v-for="rev in review">
+  <div v-for="rev in review" :key="rev.name">
     <h2>{{ rev.name }}</h2>
     <p>{{ rev.content }}</p>
   </div>
