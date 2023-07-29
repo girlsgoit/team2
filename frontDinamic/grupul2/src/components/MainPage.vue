@@ -38,7 +38,6 @@ components:{
 
 <template>
       <title>Goji-restobar Home</title>
-      <link rel="stylesheet" href="home.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@900&family=Lumanosimo&family=Poppins:ital,wght@1,200&family=Prompt:wght@200&display=swap" rel="stylesheet">
@@ -49,14 +48,14 @@ components:{
       id="img1"
       src="https://i.pinimg.com/750x/48/93/bc/4893bc873375d837f53a2add32ab1dfc.jpg" /><img class="black" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==">
 </div>
-      <header id="container1" >
+<header id="container1" >
       
-          <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%"><u><h1>Home</h1></u></button></RouterLink>
-          <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;"><h1>Menu</h1></button></RouterLink>
-          <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;"><h1>About</h1></button></RouterLink>
-          <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 74%;" ><h1>Reviews</h1></button></RouterLink>
-          <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 40%;"><h1>Book a table</h1></button></RouterLink>
-      </header>
+      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 151%;"><u><h1>Home</h1></u></button></RouterLink>
+      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 158%;"><h1>Menu</h1></button></RouterLink>
+      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 155%;"><h1>About</h1></button></RouterLink>
+      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 128%;" ><h1>Reviews</h1></button></RouterLink>
+      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 104%;"><h1>Book a table</h1></button></RouterLink>
+  </header>
       <section id="container2">
         <img
           class="img2"
@@ -144,7 +143,7 @@ body {
 }
 #button2 {
   background: none;
-  font-size: 50%;
+  font-size: 60%;
   color: rgb(230, 230, 230);
   border-color: rgb(230, 230, 230);
   padding-left: 3%;
@@ -293,7 +292,7 @@ margin-left:-20%;
 #containermeniu{ position:absolute;
   display:flex;
   justify-content: center;
-  margin-left:32%;
+  margin-left:27%;
   margin-top: -65%;
 }
 
@@ -350,7 +349,7 @@ margin-left:-20%;
 
 .sponsor{
   width:30px;
-  margin-top: 51%;
+  margin-top: 10%;
 }
 #div4{ 
   font-size: 150%;

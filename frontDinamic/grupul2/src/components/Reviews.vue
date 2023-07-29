@@ -54,11 +54,11 @@ const SubReview = async () => {
 <body>
   <header id="container1" >
       
-      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 150%;"><u><h1>Home</h1></u></button></RouterLink>
-      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 160%;"><h1>Menu</h1></button></RouterLink>
-      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 150%;"><h1>About</h1></button></RouterLink>
-      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 112%;" ><h1>Reviews</h1></button></RouterLink>
-      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 62%;"><h1>Book a table</h1></button></RouterLink>
+      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 151%;"><u><h1>Home</h1></u></button></RouterLink>
+      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 158%;"><h1>Menu</h1></button></RouterLink>
+      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 155%;"><h1>About</h1></button></RouterLink>
+      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 128%;" ><h1>Reviews</h1></button></RouterLink>
+      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 104%;"><h1>Book a table</h1></button></RouterLink>
   </header>
 
 <div class="container">
@@ -158,5 +158,10 @@ width:40%;
 position:absolute;
 margin-top:4.5%;
 margin-left:-5.4%;
+}
+
+.sponsor{
+  width:30px;
+  margin-top: 10%;
 }
 </style>

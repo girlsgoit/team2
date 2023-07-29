@@ -19,9 +19,13 @@
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br>
       
-      <button type="submit">Submit Reservation</button>
+      <button style="color:black" type="submit">Submit Reservation</button>
     </form>
   </div>
+ <div align="center"><img src="https://files.slack.com/files-pri/TB9S7NN9H-F05K67AMAA2/photo_2023-07-29_16-30-28.jpg"></div>
+
+
+
 
 </template>
 
@@ -70,15 +74,11 @@ label, input, select {
 }
 
 button {
-  background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
-}
 
 </style>

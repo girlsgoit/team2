@@ -7,11 +7,11 @@
     <body>   
         <header id="container1" >
       
-      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 150%;"><u><h1>Home</h1></u></button></RouterLink>
-      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 160%;"><h1>Menu</h1></button></RouterLink>
-      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 150%;"><h1>About</h1></button></RouterLink>
-      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 112%;" ><h1>Reviews</h1></button></RouterLink>
-      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 62%;"><h1>Book a table</h1></button></RouterLink>
+      <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%;margin-top: 151%;"><u><h1>Home</h1></u></button></RouterLink>
+      <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;margin-top: 158%;"><h1>Menu</h1></button></RouterLink>
+      <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;margin-top: 155%;"><h1>About</h1></button></RouterLink>
+      <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%; margin-top: 128%;" ><h1>Reviews</h1></button></RouterLink>
+      <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%; margin-top: 104%;"><h1>Book a table</h1></button></RouterLink>
   </header>
         <section class="breakfast-section">
             <h1>                
@@ -337,6 +337,11 @@
   box-sizing:border-box;
   font-family:'Playfair Display', serif;
 }
+
+.sponsor{
+  width:30px;
+  margin-top: 10%;
+}
 #header{
   margin:20px;
 }
@@ -376,6 +381,43 @@ body{color:white}
   height:100%;
   object-fit:cover;
   object-position:bottom;
+}
+.button1 {
+  border: none;
+  background: none;
+  font-size: 65%;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+  margin-top:100%;
+}
+#container1 {
+
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  margin-top:-5%;
+  margin-left:-20%;
+}
+#button2 {
+  background: none;
+  font-size: 100%;
+  color: rgb(230, 230, 230);
+  border-color: rgb(230, 230, 230);
+  padding-left: 3%;
+  padding-right: 3%;
+  cursor: pointer;
+  margin-top:100%;
+}
+#button2,
+.button1 {
+  transition: transform 0.2s ease-in-out;
+}
+
+#button2:hover {
+  transform: scale(1.1);
+}
+.button1:hover {
+  transform: scale(1.1);
 }
 .card-text{
   margin:-30px auto;
@@ -422,5 +464,43 @@ body{color:white}
   margin: 1%;
   margin-top:5%;
   margin-left:-20%;
+}
+
+.button1 {
+  border: none;
+  background: none;
+  font-size: 65%;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+  margin-top:100%;
+}
+#container1 {
+
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  margin-top:-5%;
+  margin-left:-20%;
+}
+#button2 {
+  background: none;
+  font-size: 200%;
+  color: rgb(230, 230, 230);
+  border-color: rgb(230, 230, 230);
+  padding-left: 3%;
+  padding-right: 3%;
+  cursor: pointer;
+  margin-top:100%;
+}
+#button2,
+.button1 {
+  transition: transform 0.2s ease-in-out;
+}
+
+#button2:hover {
+  transform: scale(1.1);
+}
+.button1:hover {
+  transform: scale(1.1);
 }
 </style>
