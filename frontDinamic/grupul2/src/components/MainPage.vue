@@ -4,6 +4,19 @@
 import { ref, onMounted } from 'vue';
 import { db } from '@/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
+import { RouterLink } from "vue-router"
+
+export default{
+  name:"MainPage",
+  data: function(){
+    return{
+
+    }
+  },
+  components: {
+    RouterLink
+  }
+}
 
 const menus = ref([]);
 
@@ -26,6 +39,7 @@ onMounted(() => {
   fetchData();
 });
 
+
 </script>
 
 
@@ -47,13 +61,12 @@ onMounted(() => {
 <link rel="icon" href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png">
 <header id="container1">
     <img id="img1" src="https://static.tildacdn.com/tild3865-3761-4537-b465-373432643132/logo_1.svg">
-    
-        <button onclick="window.open('https://htmlcolorcodes.com/')" class="button1"><u><h1>Home</h1></u></button>
-        <button onclick="window.open('https://htmlcolorcodes.com/')" class="button1" style="opacity:50%; margin-left: 3%;"><h1>Menu</h1></button>
-        <button onclick="window.open('https://htmlcolorcodes.com/')" class="button1" style="opacity:50%; margin-left: 3%;"><h1>About</h1></button>
-        <button onclick="window.open('https://htmlcolorcodes.com/')" id="button2" style="border:none ;margin-left:20%;"><h1>
-        <img id="img1" src="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-19.jpg"></h1></button>
-        <button onclick="window.open('https://htmlcolorcodes.com/')" id="button2"> <h1>Book a table</h1></button>
+        <RouterLink :to = "{name:'home'}"><button class="button1"><u><h1>Home</h1></u></button></RouterLink>
+        <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 3%;"><h1>Menu</h1></button></RouterLink>
+        <RouterLink :to = "{name:'bookings'}"><button class="button1"  style="opacity:50%; margin-left: 3%;"><h1>Book a table</h1></button></RouterLink>
+        <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 3%;"><h1>About</h1></button></RouterLink>
+        <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 3%;" ><h1>Reviews</h1></button></RouterLink>
+
 </header>
 <section id="container2">
 <img class="img2" style="animation-delay: 0.5s;" src="https://thumb.tildacdn.com/tild6234-3233-4565-b830-353662316634/-/resize/432x/-/format/webp/IMG_3305.JPG">
