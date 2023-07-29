@@ -32,7 +32,7 @@
       <button style="color:black" type="submit">Submit Reservation</button>
     </form>
   </div>
- <div align="center"><img src=https://i.pinimg.com/originals/21/e8/70/21e870f7b1a405c001459b5dc2150cc4.jpg></div>
+ <div align="center"><img src=https://i.pinimg.com/originals/df/1b/6f/df1b6f81f900a4c55d9f0ece6cf4d99e.jpg></div>
 
  <footer>
 <div align="center"> 
