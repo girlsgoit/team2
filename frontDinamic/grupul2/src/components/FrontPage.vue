@@ -40,14 +40,14 @@ onMounted(() => {
             </ul>
         </header>
 
-            <!-- DISPLAY EVERY ITEM FROM DATABASE -->
-            <!-- Loop through the menus array to render menu items -->
-            <div v-for="menuItem in menus">
-            <p>{{ menuItem.Title }}</p>
+            DISPLAY EVERY ITEM FROM DATABASE
+            Loop through the menus array to render menu items
+            <!-- <div v-for="menuItem in menus">
+            <p>{{ menuItem.Title }}</p> -->
             <!-- Render other properties of the menuItem object, e.g., Image, Price, etc. -->
-            <img :src="menuItem.Image" style="width: 100px;">
+            <!-- <img :src="menuItem.Image" style="width: 100px;">
             <p>{{ menuItem.Price }}</p>
-            </div>
+            </div> -->
     
         <!-- home section -->
             <section class="home" id="home">

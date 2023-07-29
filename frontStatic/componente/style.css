@@ -36,6 +36,7 @@
 .card-image{
   width:400px;
   height:250px;
+
 }
 .card-image>img{
   width:100%;
@@ -56,7 +57,7 @@
   font-style:italic;
 }
 .card-title{
-  font-size:2.2rem;
+  font-size:23px;
   margin-bottom:20px;
   margin-top:5px;
 }
@@ -69,8 +70,15 @@
   background-color:#970C0A;
   color:#fff;
     margin-left:auto;
-  font-size:2rem;
+  font-size:20px;
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.breakfast-section {
+    text-align: center;
+    font-size: 85px;
+    padding: 70px;
+    flex: auto;
 }

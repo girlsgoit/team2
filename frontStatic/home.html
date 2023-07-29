@@ -3,48 +3,23 @@
     <html>
       <title>Goji-restobar Home</title>
       <link rel="stylesheet" href="home.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@900&family=Lumanosimo&family=Poppins:ital,wght@1,200&family=Prompt:wght@200&display=swap" rel="stylesheet">
       <link rel="icon" href="https://i.pinimg.com/originals/7d/f7/ab/7df7ab241e2e9601b5b4be5179af0589.png"
       />
-      <header id="container1">
-        <img
-          id="img1"
-          src="https://static.tildacdn.com/tild3865-3761-4537-b465-373432643132/logo_1.svg" />
-    
-        <button
-          onclick="window.open('https://htmlcolorcodes.com/')"
-          class="button1"
-        >
-          <u><h1>Home</h1></u>
-        </button>
-        <button
-          onclick="window.open('https://htmlcolorcodes.com/')"
-          class="button1"
-          style="opacity: 50%; margin-left: 3%"
-        >
-          <h1>Menu</h1>
-        </button>
-        <button
-          onclick="window.open('https://htmlcolorcodes.com/')"
-          class="button1"
-          style="opacity: 50%; margin-left: 3%"
-        >
-          <h1>Reviews</h1>
-        </button>
-        <button
-          onclick="window.open('https://htmlcolorcodes.com/')"
-          id="button2"
-          style="border: none; margin-left: 20%"
-        >
-          <h1>
-            <img
-              id="img1"
-              src="https://icon-library.com/images/white-shopping-cart-icon-png/white-shopping-cart-icon-png-19.jpg"
-            />
-          </h1>
-        </button>
-        <button onclick="window.open('https://htmlcolorcodes.com/')" id="button2">
-          <h1>Book a table</h1>
-        </button>
+      <div align="center"><img style="margin-left:-32%" class="black" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==">
+      <img
+      id="img1"
+      src="https://i.pinimg.com/750x/48/93/bc/4893bc873375d837f53a2add32ab1dfc.jpg" /><img class="black" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8VFRUVDxUPFRUPFRUPFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRkrKys3Ny0rKysrNysrNysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDERFAQAAAAAAACigioIqooAioqCoAoCKogCiKACAACACgqKg5FRQAABQQAAAABBQBQgKACCCoIogCgCgAACgAiACgoIICKAAKmCgigKigCGKgKAgAACKAACCoIogqqAgACACgCooIoIAqIKIIAooCKiooCKgAAKIoAACoAqACCoIAAAAKigAAKgAAKAAgqKgAKAIAAAqAAAoigAAAAVKoCAKEFEQABFBQBUVA0AAAAUQBAVAAAFQAAAABBUBVAAEUAAAAAAAAAFBAADAAAARcFEFRAAAAAAAAEAAFQFUAAIAIoACAqoAAoIAqACKAAAAgoCACAAoAIAAAKACCiAqgAAAAAAAoiggCgAAqQQAFUwBEQVAABAAABQAQAAAFFEVFAAAAAAAAAVQRUQFQBagUABQRUQAFQAAAQAAABQAQVAVUUAAAAAVFBFEUUEQAAAAAAQBUAAAAAAAEAAUFRQARFEUUAAVFBFAEAUAAAAAEQQFAAAAABAAUAEBUUUAAAAAAABQAFQAAUQAAAQqRQEhQAUARYAJQAWEAABAAFIAotQEBYAJVACigEAUf/2Q==">
+</div>
+      <header id="container1" >
+      
+          <RouterLink :to = "{name:'home'}"><button class="button1" style="margin-left:0%"><u><h1>Home</h1></u></button></RouterLink>
+          <RouterLink :to = "{name:'menu'}"><button class="button1" style="opacity:50%; margin-left: 90%;"><h1>Menu</h1></button></RouterLink>
+          <RouterLink :to = "{name:'aboutUs'}"><button class="button1" style="opacity:50%; margin-left: 180%;"><h1>About</h1></button></RouterLink>
+          <RouterLink :to = "{name:'reviews'}"><button class="button1"  style="opacity:50%; margin-left: 210%;" ><h1>Reviews</h1></button></RouterLink>
+          <RouterLink :to = "{name:'bookings'}"><button id="button2"  style="opacity:50%;margin-left:180%;"><h1>Book a table</h1></button></RouterLink>
       </header>
       <section id="container2">
         <img
@@ -55,11 +30,7 @@
           style="animation-delay: 0.8s ; "
           src="https://static.tildacdn.com/tild3938-6264-4661-b537-366464323366/Rectangle_3.svg"
         />
-        <img
-          class="img2"
-          style="animation-delay: 1.2s; width:40%;"
-          src="https://thumb.tildacdn.com/tild3435-6462-4364-a237-326161386565/-/resize/503x/-/format/webp/feel_the_mojo.png"
-        />
+
      
         <div id="div1">
           <h1>About us</h1>

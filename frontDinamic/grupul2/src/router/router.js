@@ -1,33 +1,38 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import Menu1 from "../components/Menu1.vue";
+import MainPage from "../components/MainPage.vue";
+import Bookings from "../components/Bookings.vue";
+import Reviews from "../components/Reviews.vue";
+import AboutUs from "../components/AboutUs.vue";
 
-// Import your components to be used as pages
-import Home from '../components/FrontPage.vue'
-import Reviews from '../components/Reviews.vue';
-import Menu from '../components/Menu1.vue';
-
-// Create routes
-const routes = [
-  {
-    path: '/',
-    component: Home,
-    meta: {
-      title: 'Home', // Add meta data like page title, etc.
-    },
-  },
-  {
-    path: '/reviews',
-    component: Reviews,
-    meta: {
-      title: 'Reviews',
-    },
-  },
-  {
-    path: '/menu',
-    component: Menu,
-    meta: {
-      title: 'Menu',
-    },
-  },
-];
-
-export default router;
+export const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+       
+        {
+            name: "home",
+            path: "/",
+            component: MainPage
+        },
+        {
+            name:"menu",
+            path:"/menu",
+            component: Menu1
+        },
+        {
+            name:"bookings",
+            path:"/bookings",
+            component: Bookings
+        },
+        {
+            name:"reviews",
+            path:"/reviews",
+            component: Reviews
+        },
+        {
+            name:"aboutUs",
+            path:"/aboutUs",
+            component: AboutUs
+        }
+    ],
+});

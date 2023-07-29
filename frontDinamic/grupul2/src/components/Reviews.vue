@@ -1,6 +1,7 @@
 <script>
 import { db } from '@/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
+import { ref } from 'firebase/storage';
 
 const reviews = ref([]);
 
@@ -19,9 +20,10 @@ const fetchData = () => {
     reviews.value = allReviews;
   });
 };
-onMounted(() => {
+export default{
+  onMounted(){
   fetchData();
-});
+}};
 
 </script>
 
