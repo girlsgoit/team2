@@ -5,7 +5,7 @@ import Menu1 from "./components/Menu1.vue";
 import Bookings from "./components/Bookings.vue";
 import Reviews from "./components/Reviews.vue";
 import AboutUs from "./components/AboutUs.vue";
-import Mainjs from "./main.js"
+
 </script>
 
 <template>
