@@ -16,6 +16,10 @@
         <option value="table1">Table 1</option>
         <option value="table2">Table 2</option>
         <option value="table3">Table 3</option>
+        <option value="table1">Table 4</option>
+        <option value="table1">Table 5</option>
+        <option value="table1">Table 6</option>
+        <option value="table1">Table 7</option>
         <!-- Add options for other tables here -->
         <!-- Example: <option value="table2">Table 2</option> -->
       </select>
